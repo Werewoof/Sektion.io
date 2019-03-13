@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Vue JS app
+    </title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/vue"></script><script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://react.semantic-ui.com/addons/text-area/#usage-auto-height-min-height">
+    </script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.19.1/vuedraggable.umd.min.js"></script>
+    <script>
+        var observe;
+        if (window.attachEvent) {
+            observe = function (element, event, handler) {
+                element.attachEvent('on' + event, handler);
+            };
+        } else {
+            observe = function (element, event, handler) {
+                element.addEventListener(event, handler, false);
+            };
+        }
+
+        function init() {
+            var text = document.getElementById('description-input');
+
+            function resize() {
+                text.style.height = 'auto';
+                text.style.height = text.scrollHeight + 'px';
+            }
+            /* 0-timeout to get the already changed text */
+            function delayedResize() {
+                window.setTimeout(resize, 0);
+            }
+            observe(text, 'change', resize);
+            observe(text, 'cut', delayedResize);
+            observe(text, 'paste', delayedResize);
+            observe(text, 'drop', delayedResize);
+            observe(text, 'keydown', delayedResize);
+
+            text.focus();
+            text.select();
+            resize();
+        }
+    </script>
+
+        
+    <script>
+        function getVal(theVal){
+        $("#title-input").val(theVal)
+        }
+    </script>
+
+</head>
+
+<body onload="init();">
+    <div id="vue-app">
+        <div id="container">
+            <div id="nav-bar" class="light-shadow">
+                <div id="nav-bar-head">
+                        <h1>
+                            <input id="title-input" placeholder="Title" v-model="blokTitle"/>
+                        </h1>
+                    <p v-html="HELLO"></p>
+                   
+                </div>
+                <div id="nav-bar-description">
+                        <h3>
+                            <textarea id="description-input" placeholder="Description" wrap="hard" @input="changeDescription">{{blokDescription}}</textarea>
+                        </h3>
+                    </div>
+            </div>
+            <div id="container-body">
+                    <draggable v-model="myArray">
+                        <transition-group>
+                            <div v-for="element in myArray" :key="element.id">
+                                {{element.name}}
+                            </div>
+                        </transition-group>
+                    </draggable>
+                <div id="add-blok">
+                    <img id="add-one" src="img/add.svg" />
+                </div>
+                <div id="bloks">
+                    <div class="blok" :class=colors[currentColor%7]>
+                        
+                        <div class="blok-head">
+                            <div @click="currentColor++" class="color-changer">
+                                
+                            </div>
+                            <div class="blok-title" contenteditable="true">
+                                <h3> Chorus </h3>
+                                <p v-show="currentColor == 1">I'm orange!</p>
+                            </div>
+                        </div>
+                        <div class="blok-body" contenteditable="true">
+                            {{greet(blokTitle)}}
+
+                            <template v-for="color, index in colors">
+                                <p>{{index}} - {{color}}</p>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                <h2> {{name}}</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/app.js"></script>
+
+
+    <script src="src/blueBorderLeft.js"></script>
+
+
+</body>
+
+</html>

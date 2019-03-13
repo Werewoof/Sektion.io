@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Permanent+Marker|Quicksand|Ubuntu');
+
+:root{
+    --light-blue: rgb(228, 231, 236);
+    --med-blue: #ecfaff;
+    --dark-blue: #e1f4fa;
+    --line-blue: rgb(203, 204, 207);
+    --button-blue: rgb(0,122,204);
+    --arrow-orange: #9c9c98;
+    --dotted-orange: #d8d7d3;
+    --blok-head: rgba(255, 57, 74, 0.884);
+    --blok-body: rgba(255, 199, 206, 0.678);
+    --borderAmount: 4px;
+}
+
+html, body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--light-blue);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    font-family: 'Quicksand', sans-serif;
+    border: 0 none white;
+    overflow: hidden;
+    resize: none;
+    padding: 0;
+    outline: none;
+    padding: 4px 10px 20px 20px;
+    font-weight: lighter;
+    font-size: 1em;
+    width: 80vw;
+}
+
+
+
+
+
+
+
+
+.blok{
+    max-width: 30%;
+    color: rgb(83, 77, 63);
+}
+
+.blok-title{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Permanent Marker';
+    margin-top: 20px;
+    padding: 0px;
+    text-shadow: 1px 1px 5px rgb(83, 77, 63);
+    letter-spacing: 5px;
+}
+
+.blok-head{   
+    border-radius: 5px 5px 0px 0px;
+    background-color: var(--blok-head);
+    text-align: center;
+    font-family: 'Quicksand';
+    padding: 10px;
+    border-bottom: 2px dashed var(--line-blue);
+}
+
+
+.blok-body{
+    background-color: var(--blok-body);
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.light-shadow{
+    box-shadow: 0 8px 6px -6px rgb(194, 186, 166);
+}
+
+
+
+
+
+
+
+
+
+
+
+#nav-bar{
+    background-color: var(--med-blue);
+    color: rgb(83, 77, 63);
+    height: auto;
+}
+
+
+#nav-bar {
+    background-color: white;
+    margin-top: -10px;
+}
+
+#nav-bar h1{
+    border-bottom: 1px dashed var(--line-blue);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    height: 50px;
+    padding: 10px 5px 0px 10px;
+}
+
+#nav-bar h3{
+    height: auto;
+    padding: 4px 10px 20px 20px;
+    font-weight: lighter;
+}
+
+#nav-bar-head, #nav-bar-description{
+    border-left: 0px solid var(--button-blue);
+    transition: all ease .5s;
+}
+
+#nav-bar-head:hover, #nav-bar-description:hover{
+    border-left: var(--borderAmount) solid var(--button-blue);
+    transition: all ease .5s;
+}
+
+
+#nav-bar input{
+    border: none;
+    border-bottom: 1px rgba(0,0,0,0) solid;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    padding: 10px 5px 0px 10px;
+    transition: all ease .25s;
+    padding-bottom: 5px;
+}
+
+#nav-bar input:focus{
+    border: none;
+    border-bottom: 1px rgba(0,0,0,1) solid;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    padding: 10px 5px 0px 10px;
+    transition: all ease .25s;
+    padding-bottom: 5px;
+}
+
+#title-pointer, #description-pointer{
+    color: var(--arrow-orange);
+    font-family: 'sans-serif'
+}
+
+#container-body{
+    border: 2px dotted var(--dotted-orange);
+    background-color: white;
+    border-radius: 5px 5px 3px 3px;
+    margin: 20px ;
+    padding: 20px;
+}
+
+#bloks{
+    padding: 20px 60px 60px 60px;
+}
+
+#add-blok{
+    font-size: 50px;
+    padding: 0px 45%;
+    text-align: center;
+    border-radius: 50px;
+    justify-content: center;
+    -webkit-transition: all .2s ease;
+    transition: all .5s ease;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#add-blok:hover{
+    margin-top: 5px;
+    margin-bottom: -5px;
+    -webkit-transition: all .2s ease;
+    transition: all .5s ease;
+}
+
+
+#add-one{ 
+    max-width: 100%;
+    height: auto;
+  }

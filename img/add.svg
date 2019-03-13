@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs2">
+    <filter
+       id="filter4601"
+       style="color-interpolation-filters:sRGB;">
+      <feColorMatrix
+         id="feColorMatrix4599"
+         result="color2"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.21 -0.72 -0.07 2 0 " />
+    </filter>
+    <filter
+       id="filter4607"
+       style="color-interpolation-filters:sRGB;">
+      <feColorMatrix
+         id="feColorMatrix4605"
+         result="fbSourceGraphic"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.21 -0.72 -0.07 2 0 " />
+      <feColorMatrix
+         id="feColorMatrix4609"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feColorMatrix
+         in="fbSourceGraphic"
+         result="color2"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.21 -0.72 -0.07 2 0 "
+         id="feColorMatrix4611" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <path
+       transform="scale(0.26458333)"
+       id="path3717"
+       d="M 333.40234 126.8418 A 190 190 0 0 0 143.40234 316.8418 A 190 190 0 0 0 333.40234 506.8418 A 190 190 0 0 0 523.40234 316.8418 A 190 190 0 0 0 333.40234 126.8418 z M 334.28906 195.19727 C 336.6583 195.24054 339.04986 195.54627 340.67383 196.09961 C 344.50307 197.40436 348.69389 201.14464 350.67578 205.02539 L 352.25781 208.12305 L 352.42969 251.45508 L 352.60156 294.78711 L 395.63086 294.97656 C 438.04385 295.16162 438.70502 295.18307 441.59961 296.52148 C 453.44236 301.99738 456.66777 316.4151 448.16602 325.87109 C 446.49913 327.72506 444.01563 329.59228 442.01562 330.49609 L 438.66211 332.01172 L 395.63477 332.18945 L 352.60938 332.36523 L 352.43359 376.02539 C 352.25896 419.42782 352.2503 419.70229 350.88281 422.22852 C 347.4207 428.62424 341.5856 432.04883 334.15039 432.04883 C 326.64727 432.04883 321.18581 428.79857 317.75 422.28711 L 316.04297 419.05273 L 315.86719 375.70898 L 315.69141 332.36523 L 272.66602 332.18945 C 230.24451 332.01602 229.59857 331.9931 226.70312 330.6543 C 219.56047 327.35165 215.68832 321.33383 215.72266 313.58789 C 215.7646 304.13508 221.62889 297.30255 231.26758 295.47461 C 233.23105 295.10224 251.07989 294.8457 275.13867 294.8457 L 315.70117 294.8457 L 315.87109 251.75781 L 316.04297 208.66797 L 317.96094 204.91992 C 319.99254 200.94805 324.30921 197.0687 328.0332 195.86914 C 329.57172 195.37356 331.91982 195.15399 334.28906 195.19727 z "
+       style="fill:#007acc;fill-opacity:1;stroke-width:0.99999994" />
+  </g>
+</svg>
